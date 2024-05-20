@@ -1,4 +1,7 @@
 import Root from './routes/root';
+import Products from './routes/products';
+import News from './routes/news';
+import ContactUs from './routes/contactUs';
 
 const routes = [
   {
@@ -10,8 +13,16 @@ const routes = [
         element: <h1>Index</h1>,
       },
       {
-        path: '/about-us',
-        element: <h1>About Us</h1>,
+        path: '/products',
+        element: <Products />,
+      },
+      {
+        path: '/news',
+        element: <News />,
+      },
+      {
+        path: '/contact-us',
+        element: <ContactUs />,
       },
     ],
   },
