@@ -1,0 +1,11 @@
+.company-info {
+  background-color: var(--banner-color);
+  color: var(--light-grey);
+
+  text-align: center;
+  padding: 1em 0;
+
+  font-family: 'Poppins', sans-serif, serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
