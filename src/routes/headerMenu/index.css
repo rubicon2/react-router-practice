@@ -1,13 +1,21 @@
+.header-nav *,
+.header-menu-button {
+  transition: background-color 0.1s ease-in-out;
+}
+
 .header-menu-button {
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0;
 
   background-color: var(--banner-color);
   border: none;
-}
 
-.header-menu-button:hover {
-  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.header-menu-button:hover,
+.header-menu-button:focus-visible {
+  background-color: var(--banner-color-dark);
 }
 
 .header-menu-button--icon {
@@ -19,9 +27,21 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding: 1em;
-  gap: 1em;
 }
-.nav-list.header-nav-list a {
+
+.header-nav-list--item {
+  width: 100%;
+}
+
+.header-nav-list--link {
+  /* Has to be block or inline block to set width to 100% */
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+
   color: var(--light-grey);
+}
+.header-nav-list--link:hover,
+.header-nav-list--link:focus-visible {
+  background-color: var(--banner-color-dark);
 }

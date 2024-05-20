@@ -10,6 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif, serif;
 
   --banner-color: #0071d4;
+  --banner-color-dark: #0260b3;
   --off-black: rgb(10, 10, 10);
   --grey: #777777;
   --light-grey: #f0f0f4;
@@ -27,6 +28,13 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif, serif;
+  font-size: 1rem;
+  padding: 1em;
+}
+
 /* || Reusable classes */
 .nav-list {
   list-style: none;
@@ -35,5 +43,4 @@ img {
 }
 .nav-list a {
   text-decoration: none;
-  color: var(--off-black);
 }

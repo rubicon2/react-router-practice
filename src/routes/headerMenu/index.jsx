@@ -1,14 +1,19 @@
 import { useState } from 'react';
-import burgerMenuIcon from '../../assets/burgerMenu.svg';
 import { Link } from 'react-router-dom';
+
+import burgerMenuIcon from '../../assets/burgerMenu.svg';
+import closeIcon from '../../assets/close.svg';
+
 import './index.css';
 
 export default function HeaderMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleMenuClick = (event) => {
+  const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const menuIcon = menuOpen ? closeIcon : burgerMenuIcon;
 
   return (
     <div>
@@ -19,24 +24,32 @@ export default function HeaderMenu() {
       >
         <img
           className="header-menu-button--icon"
-          src={burgerMenuIcon}
+          src={menuIcon}
           alt="Open navigation menu"
         />
       </button>
       {menuOpen && (
-        <nav>
+        <nav className="header-nav">
           <ul className="nav-list header-nav-list">
-            <li>
-              <Link to="/">Home</Link>
+            <li className="header-nav-list--item">
+              <Link className="header-nav-list--link" to="/">
+                Home
+              </Link>
             </li>
-            <li>
-              <Link to="/products">Products</Link>
+            <li className="header-nav-list--item">
+              <Link className="header-nav-list--link" to="/products">
+                Products
+              </Link>
             </li>
-            <li>
-              <Link to="/news">News</Link>
+            <li className="header-nav-list--item">
+              <Link className="header-nav-list--link" to="/news">
+                News
+              </Link>
             </li>
-            <li>
-              <Link to="/contact-us">Contact Us</Link>
+            <li className="header-nav-list--item">
+              <Link className="header-nav-list--link" to="/contact-us">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>
