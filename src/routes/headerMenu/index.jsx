@@ -14,6 +14,8 @@ export default function HeaderMenu() {
   };
 
   const menuIcon = menuOpen ? closeIcon : burgerMenuIcon;
+  let menuIconClass = 'header-menu-button--icon';
+  if (menuOpen) menuIconClass += ' header-menu-button--close-icon';
 
   return (
     <div>
@@ -23,7 +25,7 @@ export default function HeaderMenu() {
         onClick={handleMenuClick}
       >
         <img
-          className="header-menu-button--icon"
+          className={menuIconClass}
           src={menuIcon}
           alt="Open navigation menu"
         />

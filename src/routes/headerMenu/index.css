@@ -20,6 +20,11 @@
 
 .header-menu-button--icon {
   width: 3rem;
+  transition: transform 0.2s ease-in-out;
+}
+.header-menu-button--close-icon {
+  /* Move icon from center to right edge, subtract a quarter of the icon's width, then the same value as the nav list link padding */
+  transform: translateX(calc(50vw - 25% - 1em));
 }
 
 .nav-list.header-nav-list {
