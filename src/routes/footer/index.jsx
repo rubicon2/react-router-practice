@@ -52,13 +52,19 @@ export default function Footer() {
           <div>&copy; 2024 Ineci Swodniw Ltd.</div>
           <ul className="nav-list social-links">
             <li>
-              <img src={facebookLogo} />
+              <a href="https://www.facebook.com/IceniWindows/" target="_blank">
+                <img src={facebookLogo} alt="Ineci Swodniw's facebook page" />
+              </a>
             </li>
             <li>
-              <img src={twitterLogo} />
+              <a href="https://twitter.com/IceniWindows" target="_blank">
+                <img src={twitterLogo} alt="Ineci Swodniw's twitter" />
+              </a>
             </li>
             <li>
-              <img src={instagramLogo} />
+              <a href="https://www.instagram.com/iceniwindows/" target="_blank">
+                <img src={instagramLogo} alt="Ineci Swodniw's instagram" />
+              </a>
             </li>
           </ul>
         </div>
