@@ -1,9 +1,28 @@
+/* || Reset */
 body {
   margin: 0;
 }
 
+#root {
+  box-sizing: border-box;
+  width: 100%;
 
-}
+  font-family: 'Open Sans', sans-serif, serif;
+
+  --banner-color: #0071d4;
+  --off-black: rgb(10, 10, 10);
+  --grey: #777777;
+  --light-grey: #f0f0f4;
+  --primary-text: #15141a;
+  --secondary-text: #5b5b66;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
 }
