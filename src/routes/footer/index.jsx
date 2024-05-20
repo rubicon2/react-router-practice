@@ -6,9 +6,23 @@ import twitterLogo from '../../assets/twitterLogo.png';
 import instagramLogo from '../../assets/instagramLogo.png';
 import './index.css';
 
-// Replace any spaces in the search term with +
 const siteSearchUrl =
-  'https://www.google.co.uk/search?q=site%253Awww.iceniwindows.co.uk';
+  'https://www.google.co.uk/search?q=site%253Awww.iceniwindows.co.uk+';
+
+const googlify = (searchTerm) => {
+  // Turn a normal space-separated series of words into something approriate for the google search url
+  return searchTerm
+    .split('')
+    .map((char) => (char === ' ' ? '+' : char))
+    .join('');
+};
+
+const handleSearch = (event) => {
+  let searchTerm = event.target.elements.search.value;
+  // Replace any spaces in the search term with +!
+  console.log(siteSearchUrl + googlify(searchTerm));
+  window.location = siteSearchUrl + googlify(searchTerm);
+};
 
 export default function Footer() {
   return (
@@ -35,15 +49,15 @@ export default function Footer() {
           </div>
           <div className="main-footer-grid--item">
             <h2 className="main-footer--heading">Newsletter</h2>
-            <Form>
-              <input type="email" placeholder="Email address" />
+            <Form className="main-footer--form">
+              <input type="email" name="email" placeholder="Email address" />
               <button type="submit">Sign up</button>
             </Form>
           </div>
           <div className="main-footer--item">
             <h2 className="main-footer--heading">Search</h2>
-            <Form>
-              <input type="text" placeholder="Search" />
+            <Form className="main-footer--form" onSubmit={handleSearch}>
+              <input type="text" name="search" placeholder="Search" />
               <button type="submit">Search</button>
             </Form>
           </div>

@@ -72,3 +72,20 @@
 .social-links img {
   width: 2rem;
 }
+
+.main-footer--form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-footer--form > input {
+  font-size: 0.9rem;
+  padding: 0.5em;
+}
+.main-footer--form > button {
+  font-size: 0.9rem;
+  align-self: baseline;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+}
