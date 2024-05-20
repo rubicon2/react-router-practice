@@ -15,7 +15,11 @@ export default function HeaderMenu() {
 
   const menuIcon = menuOpen ? closeIcon : burgerMenuIcon;
   let menuIconClass = 'header-menu-button--icon';
-  if (menuOpen) menuIconClass += ' header-menu-button--close-icon';
+  let navlistClass = 'nav-list header-nav-list';
+  if (menuOpen) {
+    menuIconClass += ' header-menu-button--close-icon';
+    navlistClass += ' show';
+  }
 
   return (
     <div>
@@ -24,38 +28,33 @@ export default function HeaderMenu() {
         type="button"
         onClick={handleMenuClick}
       >
-        <img
-          className={menuIconClass}
-          src={menuIcon}
-          alt="Open navigation menu"
-        />
+        <img className={menuIconClass} src={menuIcon} alt="Navigation menu" />
       </button>
-      {menuOpen && (
-        <nav className="header-nav">
-          <ul className="nav-list header-nav-list">
-            <li className="header-nav-list--item">
-              <Link className="header-nav-list--link" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="header-nav-list--item">
-              <Link className="header-nav-list--link" to="/products">
-                Products
-              </Link>
-            </li>
-            <li className="header-nav-list--item">
-              <Link className="header-nav-list--link" to="/news">
-                News
-              </Link>
-            </li>
-            <li className="header-nav-list--item">
-              <Link className="header-nav-list--link" to="/contact-us">
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      )}
+
+      <nav className="header-nav">
+        <ul className={navlistClass}>
+          <li className="header-nav-list--item">
+            <Link className="header-nav-list--link" to="/">
+              Home
+            </Link>
+          </li>
+          <li className="header-nav-list--item">
+            <Link className="header-nav-list--link" to="/products">
+              Products
+            </Link>
+          </li>
+          <li className="header-nav-list--item">
+            <Link className="header-nav-list--link" to="/news">
+              News
+            </Link>
+          </li>
+          <li className="header-nav-list--item">
+            <Link className="header-nav-list--link" to="/contact-us">
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

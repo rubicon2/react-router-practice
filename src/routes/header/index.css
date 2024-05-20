@@ -1,10 +1,26 @@
-.company-info {
-  background-color: var(--banner-color);
+.main-header {
   color: var(--light-grey);
+  /* So the header menu bar can be above rest of page, but behind the main header logo etc. */
+  position: relative;
+  z-index: 1;
+}
 
-  text-align: center;
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--banner-color);
+}
 
+.company-info--tel {
   font-family: 'Poppins', sans-serif, serif;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.company-info--logo {
+  padding: 0 1rem;
+  padding-top: 2rem;
+  max-width: 350px;
 }
