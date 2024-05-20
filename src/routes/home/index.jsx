@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <>
+    <div className="container">
       <h1>Home</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -32,6 +32,6 @@ export default function Home() {
         explicabo possimus veniam cumque rem magnam beatae sapiente assumenda!
         Ratione, odit?
       </p>
-    </>
+    </div>
   );
 }
