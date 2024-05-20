@@ -34,22 +34,38 @@ export default function HeaderMenu() {
       <nav className="header-nav">
         <ul className={navlistClass}>
           <li className="header-nav-list--item">
-            <Link className="header-nav-list--link" to="/">
+            <Link
+              className="header-nav-list--link"
+              to="/"
+              onClick={() => setMenuOpen(false)}
+            >
               Home
             </Link>
           </li>
           <li className="header-nav-list--item">
-            <Link className="header-nav-list--link" to="/products">
+            <Link
+              className="header-nav-list--link"
+              to="/products"
+              onClick={() => setMenuOpen(false)}
+            >
               Products
             </Link>
           </li>
           <li className="header-nav-list--item">
-            <Link className="header-nav-list--link" to="/news">
+            <Link
+              className="header-nav-list--link"
+              to="/news"
+              onClick={() => setMenuOpen(false)}
+            >
               News
             </Link>
           </li>
           <li className="header-nav-list--item">
-            <Link className="header-nav-list--link" to="/contact-us">
+            <Link
+              className="header-nav-list--link"
+              to="/contact-us"
+              onClick={() => setMenuOpen(false)}
+            >
               Contact Us
             </Link>
           </li>
