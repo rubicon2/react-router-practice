@@ -2,6 +2,9 @@
   background-color: var(--off-black);
   color: var(--grey);
 
+  font-size: 0.9rem;
+  font-weight: 400;
+
   min-width: max-content;
 }
 .main-footer .container {
@@ -52,8 +55,6 @@
 
 .nav-list.footer-nav-list a {
   color: var(--grey);
-  font-weight: 300;
-  font-size: 0.9rem;
 }
 .nav-list.footer-nav-list a:hover {
   opacity: 0.8;
