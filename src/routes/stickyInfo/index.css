@@ -1,0 +1,16 @@
+.sticky-info {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-info--tel {
+  background-color: var(--banner-color);
+  color: var(--light-grey);
+
+  text-align: center;
+  padding-top: 0.2em;
+
+  font-family: 'Poppins', sans-serif, serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}

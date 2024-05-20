@@ -22,7 +22,7 @@ export default function HeaderMenu() {
   }
 
   return (
-    <div>
+    <div className="header-menu">
       <button
         className="header-menu-button"
         type="button"

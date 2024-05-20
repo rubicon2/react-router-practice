@@ -1,15 +1,10 @@
-import HeaderMenu from '../headerMenu';
 import logo from '../../assets/white-logo.png';
 import './index.css';
 
 export default function Header() {
   return (
     <header className="main-header">
-      <div className="company-info">
-        <img className="company-info--logo" src={logo} alt="" />
-        <div className="company-info--tel">01122 334455</div>
-      </div>
-      <HeaderMenu />
+      <img className="main-header--logo" src={logo} alt="" />
     </header>
   );
 }

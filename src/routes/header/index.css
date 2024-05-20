@@ -5,21 +5,12 @@
   z-index: 1;
 }
 
-.company-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
+.main-header {
   background-color: var(--banner-color);
+  text-align: center;
 }
 
-.company-info--tel {
-  font-family: 'Poppins', sans-serif, serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.company-info--logo {
+.main-header--logo {
   padding: 0 1rem;
   padding-top: 2rem;
   max-width: 320px;
