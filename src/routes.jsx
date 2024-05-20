@@ -1,4 +1,5 @@
 import Root from './routes/root';
+import Home from './routes/home';
 import Products from './routes/products';
 import News from './routes/news';
 import ContactUs from './routes/contactUs';
@@ -10,7 +11,7 @@ const routes = [
     children: [
       {
         index: true,
-        element: <h1>Index</h1>,
+        element: <Home />,
       },
       {
         path: '/products',
