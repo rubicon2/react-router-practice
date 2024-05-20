@@ -1,5 +1,5 @@
 import HeaderMenu from '../headerMenu';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/white-logo.png';
 import './index.css';
 
 export default function Header() {
