@@ -62,7 +62,6 @@
 
 .footer-gubbins {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
@@ -91,4 +90,15 @@
   border: none;
   border-radius: 5px;
   padding: 0.5em 2em;
+}
+
+@media (min-width: 464px) {
+  .main-footer--logo {
+    margin: 0;
+  }
+
+  .footer-gubbins {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
