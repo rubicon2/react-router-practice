@@ -1,11 +1,17 @@
 @use '../../breakpoints';
 
-.header-nav *,
-.header-menu-button {
+// || General
+.header-link {
+  font-weight: 700;
+}
+
+// || Mobile sliding menu
+.mobile-nav-list--item,
+.mobile-header-menu-button {
   transition: background-color 0.1s ease-in-out;
 }
 
-.header-menu-button {
+.mobile-header-menu-button {
   width: 100%;
   padding: 0;
 
@@ -15,31 +21,24 @@
   display: grid;
   place-items: center;
 }
-.header-menu-button:hover,
-.header-menu-button:focus-visible {
+.mobile-header-menu-button:hover,
+.mobile-header-menu-button:focus-visible {
   background-color: var(--banner-color-dark);
 }
-
-.header-menu-button--icon {
+.mobile-header-menu-button--icon {
   width: 3rem;
   transition: transform 0.2s ease-in-out;
 }
-.header-menu-button--close-icon {
+.mobile-header-menu-button--close-icon {
   /* Move icon from center to right edge, subtract a quarter of the icon's width, then the same value as the nav list link padding */
   transform: translateX(calc(50vw - 25% - 1em));
 }
 
-.header-link {
-  font-weight: 700;
-}
 .mobile-header-link {
   color: var(--light-grey);
 }
-.desktop-header-link {
-  color: var(--off-black);
-}
 
-.nav-list.header-nav-list {
+.mobile-header-nav-list {
   background-color: var(--banner-color);
   display: flex;
   flex-direction: column;
@@ -52,15 +51,15 @@
 
   transition: transform 0.6s ease-in-out;
 }
-.nav-list.header-nav-list.show {
+.mobile-header-nav-list.show {
   transform: translateY(0%);
 }
 
-.header-nav-list--item {
+.mobile-header-nav-list--item {
   width: 100vw;
 }
 
-.header-nav-list--link {
+.mobile-header-link {
   /* Has to be block or inline block to set width to 100% */
   display: inline-block;
   width: 100%;
@@ -69,12 +68,13 @@
   color: var(--light-grey);
   font-weight: 700;
 }
-.header-nav-list--link:hover,
-.header-nav-list--link:focus-visible {
+.mobile-header-link:hover,
+.mobile-header-link:focus-visible {
   background-color: var(--banner-color-dark);
 }
 
-.header-desktop-menu {
+// || Desktop menu bar
+.desktop-header-menu {
   // Hide until tablet breakpoint is reached
   display: none;
   padding: 1em 0;
@@ -88,14 +88,20 @@
   display: flex;
   justify-content: space-evenly;
   color: var(--banner-color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.desktop-header-link {
+  color: var(--off-black);
 }
 
 @media (min-width: breakpoints.$tablet) {
-  .header-menu {
+  .mobile-header-menu {
     display: none;
   }
 
-  .header-desktop-menu {
+  .desktop-header-menu {
     display: block;
     position: relative;
     z-index: -1;
