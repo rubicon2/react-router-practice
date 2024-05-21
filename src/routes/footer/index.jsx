@@ -29,7 +29,17 @@ export default function Footer() {
     <footer className="main-footer">
       <div className="container">
         <div className="main-footer-grid">
-          <img className="main-footer--logo" src={logo} alt="" />
+          <div className="main-footer-grid--item">
+            <img className="main-footer--logo" src={logo} alt="" />
+            <p>
+              Our outstanding PVCu, Aluminium and Composite Door products are
+              available across all of the South East of England including
+              Witham, Colchester, Maldon, Sudbury, Basildon, Bishop's Stortford,
+              Southend on Sea, Harlow and surrounding areas. We also provide
+              services in Essex, Suffolk, Cambridgeshire, Bedfordshire,
+              Hertfordshire, Kent, Greater London and Surrey.
+            </p>
+          </div>
           <div className="main-footer-grid--item">
             <h2 className="main-footer--heading">Policies</h2>
             <ul className="nav-list footer-nav-list">

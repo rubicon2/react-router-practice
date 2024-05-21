@@ -4,8 +4,6 @@
 
   font-size: 0.9rem;
   font-weight: 400;
-
-  min-width: max-content;
 }
 .main-footer .container {
   /* To ensure social links are evenly spaced between main-footer-grid margin-bottom of 1rem */
