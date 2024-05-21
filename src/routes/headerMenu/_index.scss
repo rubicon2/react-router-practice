@@ -29,6 +29,16 @@
   transform: translateX(calc(50vw - 25% - 1em));
 }
 
+.header-link {
+  font-weight: 700;
+}
+.mobile-header-link {
+  color: var(--light-grey);
+}
+.desktop-header-link {
+  color: var(--off-black);
+}
+
 .nav-list.header-nav-list {
   background-color: var(--banner-color);
   display: flex;
@@ -64,5 +74,30 @@
   background-color: var(--banner-color-dark);
 }
 
+.header-desktop-menu {
+  // Hide until tablet breakpoint is reached
+  display: none;
+  padding: 1em 0;
+  background-color: var(--light-grey);
+  color: black;
+  box-shadow: 0px 5px 10px 1px rgba(20, 20, 20, 0.123);
+  text-transform: uppercase;
+}
+
+.desktop-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--banner-color);
+}
+
 @media (min-width: breakpoints.$tablet) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-desktop-menu {
+    display: block;
+    position: relative;
+    z-index: -1;
+  }
 }

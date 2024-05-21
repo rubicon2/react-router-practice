@@ -11,6 +11,10 @@
   padding: 0.5em 1em;
 }
 
+.sticky-info-company-details > .container {
+  padding: 0;
+}
+
 .sticky-info--tel {
   color: var(--light-grey);
 
@@ -30,7 +34,7 @@
 }
 
 @media (min-width: breakpoints.$tablet) {
-  .sticky-info-company-details {
+  .sticky-info-company-details > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
