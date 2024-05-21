@@ -16,9 +16,11 @@ export default function HeaderMenu() {
   const menuIcon = menuOpen ? closeIcon : burgerMenuIcon;
   let menuIconClass = 'header-menu-button--icon';
   let navlistClass = 'nav-list header-nav-list';
+  let menuItemTabIndex = -1;
   if (menuOpen) {
     menuIconClass += ' header-menu-button--close-icon';
     navlistClass += ' show';
+    menuItemTabIndex = 0;
   }
 
   return (
@@ -27,17 +29,21 @@ export default function HeaderMenu() {
         className="header-menu-button"
         type="button"
         onClick={handleMenuClick}
+        aria-expanded={menuOpen}
+        aria-controls="header-nav"
       >
         <img className={menuIconClass} src={menuIcon} alt="Navigation menu" />
       </button>
 
-      <nav className="header-nav">
+      <nav id="header-nav" className="header-nav">
         <ul className={navlistClass}>
           <li className="header-nav-list--item">
             <Link
               className="header-nav-list--link"
               to="/"
               onClick={() => setMenuOpen(false)}
+              aria-hidden={!menuOpen}
+              tabIndex={menuItemTabIndex}
             >
               Home
             </Link>
@@ -47,6 +53,8 @@ export default function HeaderMenu() {
               className="header-nav-list--link"
               to="/products"
               onClick={() => setMenuOpen(false)}
+              aria-hidden={!menuOpen}
+              tabIndex={menuItemTabIndex}
             >
               Products
             </Link>
@@ -56,6 +64,8 @@ export default function HeaderMenu() {
               className="header-nav-list--link"
               to="/news"
               onClick={() => setMenuOpen(false)}
+              aria-hidden={!menuOpen}
+              tabIndex={menuItemTabIndex}
             >
               News
             </Link>
@@ -65,6 +75,8 @@ export default function HeaderMenu() {
               className="header-nav-list--link"
               to="/contact-us"
               onClick={() => setMenuOpen(false)}
+              aria-hidden={!menuOpen}
+              tabIndex={menuItemTabIndex}
             >
               Contact Us
             </Link>
