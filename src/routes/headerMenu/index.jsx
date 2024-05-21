@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import burgerMenuIcon from '../../assets/burgerMenu.svg';
 import closeIcon from '../../assets/close.svg';
 
-import './index.css';
+import './_index.scss';
 
 export default function HeaderMenu() {
   const [menuOpen, setMenuOpen] = useState(false);

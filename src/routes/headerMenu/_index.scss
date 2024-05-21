@@ -1,3 +1,5 @@
+@use '../../breakpoints';
+
 .header-nav *,
 .header-menu-button {
   transition: background-color 0.1s ease-in-out;
@@ -60,4 +62,7 @@
 .header-nav-list--link:hover,
 .header-nav-list--link:focus-visible {
   background-color: var(--banner-color-dark);
+}
+
+@media (min-width: breakpoints.$tablet) {
 }

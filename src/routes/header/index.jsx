@@ -1,5 +1,5 @@
 import logo from '../../assets/white-logo.png';
-import './index.css';
+import './_index.scss';
 
 export default function Header() {
   return (

@@ -1,3 +1,5 @@
+@use '../../breakpoints';
+
 .main-header {
   color: var(--light-grey);
   /* So the header menu bar can be above rest of page, but behind the main header logo etc. */
@@ -14,4 +16,10 @@
   padding: 0 1rem;
   padding-top: 2rem;
   max-width: 280px;
+}
+
+@media (min-width: breakpoints.$tablet) {
+  .main-header {
+    display: none;
+  }
 }
