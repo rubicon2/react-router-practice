@@ -1,5 +1,6 @@
 /* || Reset */
 body {
+  overflow-y: scroll;
   margin: 0;
 }
 
