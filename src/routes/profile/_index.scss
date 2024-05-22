@@ -1,0 +1,28 @@
+.profile--heading {
+  margin: 1rem 0;
+  line-height: 2.5rem;
+}
+
+.profile--name,
+.profile--job-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.profile--name {
+  font-size: 3rem;
+}
+
+.profile--job-title {
+  font-weight: 300;
+}
+
+.profile--grid {
+  gap: 2rem;
+}
+
+.profile--photo {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
