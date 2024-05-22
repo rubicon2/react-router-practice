@@ -1,5 +1,5 @@
 .meet-the-team--department {
-  padding: 1rem;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--light-grey);
   text-transform: uppercase;
 }
@@ -10,6 +10,6 @@
 
 .meet-the-team--department-members {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 3rem;
 }
