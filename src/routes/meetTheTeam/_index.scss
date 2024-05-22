@@ -1,7 +1,10 @@
+.meet-the-team--heading {
+  text-transform: uppercase;
+}
+
 .meet-the-team--department {
   padding: 1rem 0;
   border-bottom: 1px solid var(--light-grey);
-  text-transform: uppercase;
 }
 .meet-the-team--department:last-of-type {
   border-bottom: none;
