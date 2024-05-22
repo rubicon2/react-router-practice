@@ -1,3 +1,9 @@
+import './_index.scss';
+
 export default function ContactUs() {
-  return <h1>Contact Us Page</h1>;
+  return (
+    <main className="container">
+      <h1 className="page-heading">Contact Us</h1>
+    </main>
+  );
 }
