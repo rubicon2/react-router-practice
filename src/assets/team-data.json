@@ -1,0 +1,64 @@
+{
+  "departments": [
+    {
+      "name": "Directors",
+      "members": [
+        {
+          "name": "Fred Bloggs",
+          "jobTitle": "Managing Director",
+          "tel": "000",
+          "email": "fred@megawindows.co.uk",
+          "photoUrl": "/src/assets/team-photos/fred.jpg",
+          "bio": "Stop asking me for a bio, I have a job for christsake."
+        },
+        {
+          "name": "Joey Bloppers",
+          "jobTitle": "Banter Director",
+          "tel": "111",
+          "email": "joey@megawindows.co.uk",
+          "photoUrl": "/src/assets/team-photos/joey.jpg",
+          "bio": "If you keep pestering me for a bio, I am going to get you sacked."
+        }
+      ]
+    },
+    {
+      "name": "Marketing",
+      "members": [
+        {
+          "name": "Someone Very Smart",
+          "jobTitle": "Messing Around On Social Media All Day",
+          "tel": "222",
+          "email": "iamveryimportantandsmart@megawindows.co.uk",
+          "photoUrl": "/src/assets/team-photos/someone.jpg",
+          "bio": "I am the coolest guy ever! I am so cool, I earn £95k a year and all I do is mess around on social media all day doing this thing called 'marketing'. Without me, the company would go under."
+        }
+      ]
+    },
+    {
+      "name": "Accounts",
+      "members": [
+        {
+          "name": "Jeff Winger",
+          "jobTitle": "Telephone Communications Officer",
+          "tel": "999",
+          "email": "winger@megawindows.co.uk",
+          "photoUrl": "/src/assets/team-photos/jeff.jpg"
+        },
+        {
+          "name": "Annie Edison",
+          "jobTitle": "Actually Getting Work Done Officer",
+          "tel": "999",
+          "email": "edison@megawindows.co.uk",
+          "photoUrl": "/src/assets/team-photos/annie.jpg"
+        },
+        {
+          "name": "Abed Nadir",
+          "jobTitle": "Optimisation Officer",
+          "tel": "999",
+          "email": "nadir@megawindows.co.uk",
+          "photoUrl": "/src/assets/team-photos/abed.jpg"
+        }
+      ]
+    }
+  ]
+}

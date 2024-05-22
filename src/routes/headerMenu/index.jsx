@@ -74,6 +74,17 @@ export default function HeaderMenu() {
             <li className="mobile-header-nav-list--item">
               <Link
                 className="header-link mobile-header-link"
+                to="/about-us"
+                onClick={() => setMenuOpen(false)}
+                aria-hidden={!menuOpen}
+                tabIndex={menuItemTabIndex}
+              >
+                About Us
+              </Link>
+            </li>
+            <li className="mobile-header-nav-list--item">
+              <Link
+                className="header-link mobile-header-link"
                 to="/contact-us"
                 onClick={() => setMenuOpen(false)}
                 aria-hidden={!menuOpen}
@@ -106,6 +117,14 @@ export default function HeaderMenu() {
               <li>
                 <Link className="header-link desktop-header-link" to="/news">
                   News
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="header-link desktop-header-link"
+                  to="/about-us"
+                >
+                  About Us
                 </Link>
               </li>
               <li>

@@ -60,3 +60,14 @@ button {
 .no-padding {
   padding: 0;
 }
+
+.page-heading {
+  margin-top: 0;
+}
+
+.grid-two-col {
+  display: grid;
+  /* Move down to 1 col if we don't hit the tablet breakpoint */
+  /* Min needs to be less than 320px to allow for padding around containing elements */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}

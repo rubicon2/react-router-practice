@@ -2,6 +2,7 @@ import Root from './routes/root';
 import Home from './routes/home';
 import Products from './routes/products';
 import News from './routes/news';
+import AboutUs from './routes/aboutUs';
 import ContactUs from './routes/contactUs';
 
 const routes = [
@@ -20,6 +21,10 @@ const routes = [
       {
         path: '/news',
         element: <News />,
+      },
+      {
+        path: '/about-us',
+        element: <AboutUs />,
       },
       {
         path: '/contact-us',

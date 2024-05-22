@@ -1,0 +1,17 @@
+.team-card {
+}
+
+.team-card--photo {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.team-card--name,
+.team-card--job-title {
+  margin: 0;
+}
+
+.team-card--job-title {
+  font-weight: 300;
+}
