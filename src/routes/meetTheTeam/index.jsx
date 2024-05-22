@@ -6,7 +6,7 @@ export default function MeetTheTeam() {
   return (
     <div>
       <h1>Meet The Team</h1>
-      <p>
+      <p className="half-width">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus a dolore
         aperiam, harum corrupti temporibus. Odio cumque sed harum? Amet!
       </p>

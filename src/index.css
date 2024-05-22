@@ -72,3 +72,11 @@ button {
   /* Min needs to be less than 320px to allow for padding around containing elements */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
+
+.half-width {
+  width: 50%;
+}
+
+.quarter-width {
+  width: 25%;
+}
