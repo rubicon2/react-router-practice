@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="container">
-      <h1>Home</h1>
+    <main className="container">
+      <h1 className="page-heading">Home</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
         explicabo possimus veniam cumque rem magnam beatae sapiente assumenda!
@@ -32,6 +32,6 @@ export default function Home() {
         explicabo possimus veniam cumque rem magnam beatae sapiente assumenda!
         Ratione, odit?
       </p>
-    </div>
+    </main>
   );
 }

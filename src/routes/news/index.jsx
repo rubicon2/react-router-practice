@@ -1,3 +1,7 @@
 export default function News() {
-  return <h1>News Page</h1>;
+  return (
+    <main className="container">
+      <h1 className="page-heading">News Page</h1>
+    </main>
+  );
 }
