@@ -9,7 +9,7 @@ body {
   width: 100%;
 
   font-family: 'Open Sans', sans-serif, serif;
-  line-height: 1.5rem;
+  line-height: 1.5;
 
   --banner-color: #0071d4;
   --banner-color-dark: #0260b3;
