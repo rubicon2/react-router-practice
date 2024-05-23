@@ -26,7 +26,7 @@ const handleSearch = (event) => {
 export default function Footer() {
   return (
     <footer className="main-footer">
-      <div className="container">
+      <div className="container top-padding">
         <div className="main-footer-grid">
           <div className="main-footer-grid--item">
             <img className="main-footer--logo" src={logo} alt="" />

@@ -62,9 +62,13 @@ h6 {
 }
 
 .container {
-  padding: 2rem 1rem;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+}
+.container.top-padding {
+  padding-top: 2rem;
 }
 
 .no-padding {
