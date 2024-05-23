@@ -37,10 +37,6 @@ button {
   padding: 1em;
 }
 
-p {
-  margin-top: 0;
-}
-
 /* || Reusable classes */
 .nav-list {
   list-style: none;

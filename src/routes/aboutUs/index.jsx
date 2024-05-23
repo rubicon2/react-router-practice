@@ -8,7 +8,7 @@ export default function AboutUs() {
       <h1 className="page-heading">About Us</h1>
       <div className="grid-two-col">
         <div>
-          <p className="main-p">
+          <p className="main-p no-margin">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim
             pariatur aut possimus. Nesciunt atque sequi illo cum. Quas,
             accusamus!
