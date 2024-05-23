@@ -84,3 +84,7 @@ button {
 .quarter-width {
   width: 25%;
 }
+
+.p-twenty-five-em {
+  max-width: 25em;
+}
