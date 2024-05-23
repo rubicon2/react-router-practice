@@ -21,7 +21,7 @@ export default function Profile() {
       <Link to="/about-us">Back</Link>
       <div className="profile--heading">
         <h1 className="profile--name">{member.name}</h1>
-        <h2 className="profile--job-title">{member.jobTitle}</h2>
+        <div className="profile--job-title">{member.jobTitle}</div>
       </div>
       <div className="profile--email">{member.email}</div>
       <div className="grid-two-col profile--grid">
