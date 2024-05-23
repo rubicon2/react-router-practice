@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router';
+import { ScrollRestoration } from 'react-router-dom';
 import Header from './header';
 import Footer from './footer';
 import StickyInfo from './stickyInfo';
@@ -10,6 +11,11 @@ export default function Root() {
       <StickyInfo />
       <Outlet />
       <Footer />
+      <ScrollRestoration
+        getKey={(location, matches) => {
+          return location.pathname;
+        }}
+      />
     </>
   );
 }
