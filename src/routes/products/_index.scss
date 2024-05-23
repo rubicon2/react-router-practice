@@ -9,8 +9,7 @@
 
 .products--product-section {
   padding-bottom: 2rem;
-  // Want even spacing between product section content and border, but line spacing on next heading means 1rem looks better than 2rem
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid var(--light-grey);
 }
 
@@ -22,5 +21,5 @@
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0;
+  margin: 1rem 0;
 }
