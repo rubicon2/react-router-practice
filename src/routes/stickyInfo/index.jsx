@@ -1,5 +1,5 @@
 import HeaderMenu from '../headerMenu';
-import companyLogo from '../../assets/white-logo.png';
+import companyLogo from '../../assets/white-logo.svg';
 import './_index.scss';
 
 export default function StickyInfo() {

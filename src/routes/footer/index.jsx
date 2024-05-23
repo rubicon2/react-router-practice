@@ -1,13 +1,12 @@
 import { Link, Form } from 'react-router-dom';
 
-import logo from '../../assets/white-logo.png';
+import logo from '../../assets/white-logo.svg';
 import facebookLogo from '../../assets/facebookLogo.png';
 import twitterLogo from '../../assets/twitterLogo.png';
 import instagramLogo from '../../assets/instagramLogo.png';
 import './index.css';
 
-const siteSearchUrl =
-  'https://www.google.co.uk/search?q=site%253Awww.iceniwindows.co.uk+';
+const siteSearchUrl = `https://www.google.co.uk/search?q=site%3A${window.location.hostname}+`;
 
 const googlify = (searchTerm) => {
   // Turn a normal space-separated series of words into something approriate for the google search url
@@ -32,12 +31,10 @@ export default function Footer() {
           <div className="main-footer-grid--item">
             <img className="main-footer--logo" src={logo} alt="" />
             <p>
-              Our outstanding PVCu, Aluminium and Composite Door products are
-              available across all of the South East of England including
-              Witham, Colchester, Maldon, Sudbury, Basildon, Bishop's Stortford,
-              Southend on Sea, Harlow and surrounding areas. We also provide
-              services in Essex, Suffolk, Cambridgeshire, Bedfordshire,
-              Hertfordshire, Kent, Greater London and Surrey.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
+              quisquam facilis laudantium recusandae. Molestias atque obcaecati
+              dolores. Veniam eos sunt, a repellendus placeat numquam culpa unde
+              deleniti soluta cumque natus!
             </p>
           </div>
           <div className="main-footer-grid--item">
@@ -73,21 +70,21 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-gubbins">
-          <div>&copy; 2024 Ineci Swodniw Ltd.</div>
+          <div>&copy; 2024 Fake Windows Ltd.</div>
           <ul className="nav-list social-links">
             <li>
-              <a href="https://www.facebook.com/IceniWindows/" target="_blank">
-                <img src={facebookLogo} alt="Ineci Swodniw's facebook page" />
+              <a href="#">
+                <img src={facebookLogo} alt="Fake Windows facebook page" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/IceniWindows" target="_blank">
-                <img src={twitterLogo} alt="Ineci Swodniw's twitter" />
+              <a href="#">
+                <img src={twitterLogo} alt="Fake Windows twitter" />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/iceniwindows/" target="_blank">
-                <img src={instagramLogo} alt="Ineci Swodniw's instagram" />
+              <a href="#">
+                <img src={instagramLogo} alt="Fake Windows instagram" />
               </a>
             </li>
           </ul>

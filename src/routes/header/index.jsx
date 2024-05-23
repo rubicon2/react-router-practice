@@ -1,4 +1,4 @@
-import logo from '../../assets/white-logo.png';
+import logo from '../../assets/white-logo.svg';
 import './_index.scss';
 
 export default function Header() {
