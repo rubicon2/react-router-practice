@@ -4,7 +4,7 @@ import './_index.scss';
 export default function Home() {
   return (
     <main className="container home--container">
-      <h1 className="page-heading home--hero">
+      <h1 className="page-heading">
         THE <span className="home--hero-bold">NEXT GENERATION OF WINDOWS</span>{' '}
         ARE HERE
       </h1>
