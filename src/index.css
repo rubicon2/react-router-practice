@@ -30,11 +30,36 @@ img {
   max-width: 100%;
 }
 
+input,
+textarea,
 button {
-  cursor: pointer;
   font-family: 'Open Sans', sans-serif, serif;
   font-size: 1rem;
-  padding: 1em;
+  line-height: 1.5;
+
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  padding: 0.5em;
+  border: 1px solid var(--off-black);
+}
+
+button {
+  font-weight: 600;
+
+  padding: 0.8em 1.5em;
+  border: none;
+
+  background-color: var(--banner-color);
+  color: var(--light-grey);
+
+  cursor: pointer;
+}
+button:hover,
+button:focus-visible {
+  background-color: var(--banner-color-dark);
 }
 
 h1,
@@ -109,6 +134,7 @@ h6 {
 }
 
 .main-p {
+  margin-top: 0;
   font-size: 1.5rem;
   font-weight: 300;
 }

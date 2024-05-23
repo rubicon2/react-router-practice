@@ -1,0 +1,39 @@
+@use '../../breakpoints';
+
+.contact-us--form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-us--form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us--form-item > input,
+.contact-us--form-item > textarea {
+  font-size: 1rem;
+  width: 70%;
+}
+
+.contact-us--form-item > textarea {
+  resize: vertical;
+}
+
+.contact-us--form > button {
+  align-self: center;
+}
+
+@media (max-width: breakpoints.$tablet) {
+  .contact-us--form-item {
+    flex-direction: column;
+  }
+
+  .contact-us--form-item > input,
+  .contact-us--form-item > textarea {
+    width: 100%;
+  }
+}
