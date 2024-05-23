@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import './_index.scss';
 
 export default function TeamCard({ member }) {
-  console.log(member);
   return (
     <div className="team-card">
       <img className="team-card--photo" src={member.photoUrl} />
