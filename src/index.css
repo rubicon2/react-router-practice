@@ -37,6 +37,10 @@ button {
   padding: 1em;
 }
 
+p {
+  margin-top: 0;
+}
+
 /* || Reusable classes */
 .nav-list {
   list-style: none;
@@ -75,6 +79,7 @@ button {
   /* Move down to 1 col if we don't hit the tablet breakpoint */
   /* Min needs to be less than 320px to allow for padding around containing elements */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
 
 .half-width {
@@ -87,4 +92,9 @@ button {
 
 .p-twenty-five-em {
   max-width: 25em;
+}
+
+.main-p {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
