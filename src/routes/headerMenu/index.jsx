@@ -42,7 +42,10 @@ export default function HeaderMenu() {
               <Link
                 className="header-link mobile-header-link"
                 to="/"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false);
+                  scrollTo(0, 0);
+                }}
                 aria-hidden={!menuOpen}
                 tabIndex={menuItemTabIndex}
               >
@@ -53,7 +56,10 @@ export default function HeaderMenu() {
               <Link
                 className="header-link mobile-header-link"
                 to="/products"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false);
+                  scrollTo(0, 0);
+                }}
                 aria-hidden={!menuOpen}
                 tabIndex={menuItemTabIndex}
               >
@@ -64,7 +70,10 @@ export default function HeaderMenu() {
               <Link
                 className="header-link mobile-header-link"
                 to="/news"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false);
+                  scrollTo(0, 0);
+                }}
                 aria-hidden={!menuOpen}
                 tabIndex={menuItemTabIndex}
               >
@@ -75,7 +84,10 @@ export default function HeaderMenu() {
               <Link
                 className="header-link mobile-header-link"
                 to="/about-us"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false);
+                  scrollTo(0, 0);
+                }}
                 aria-hidden={!menuOpen}
                 tabIndex={menuItemTabIndex}
               >
@@ -86,7 +98,10 @@ export default function HeaderMenu() {
               <Link
                 className="header-link mobile-header-link"
                 to="/contact-us"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false);
+                  scrollTo(0, 0);
+                }}
                 aria-hidden={!menuOpen}
                 tabIndex={menuItemTabIndex}
               >
@@ -102,7 +117,11 @@ export default function HeaderMenu() {
           <nav>
             <ul className="nav-list desktop-nav-list">
               <li>
-                <Link className="header-link desktop-header-link" to="/">
+                <Link
+                  className="header-link desktop-header-link"
+                  to="/"
+                  onClick={() => scrollTo(0, 0)}
+                >
                   Home
                 </Link>
               </li>
@@ -110,12 +129,17 @@ export default function HeaderMenu() {
                 <Link
                   className="header-link desktop-header-link"
                   to="/products"
+                  onClick={() => scrollTo(0, 0)}
                 >
                   Products
                 </Link>
               </li>
               <li>
-                <Link className="header-link desktop-header-link" to="/news">
+                <Link
+                  className="header-link desktop-header-link"
+                  to="/news"
+                  onClick={() => scrollTo(0, 0)}
+                >
                   News
                 </Link>
               </li>
@@ -123,6 +147,7 @@ export default function HeaderMenu() {
                 <Link
                   className="header-link desktop-header-link"
                   to="/about-us"
+                  onClick={() => scrollTo(0, 0)}
                 >
                   About Us
                 </Link>
@@ -131,6 +156,7 @@ export default function HeaderMenu() {
                 <Link
                   className="header-link desktop-header-link"
                   to="/contact-us"
+                  onClick={() => scrollTo(0, 0)}
                 >
                   Contact Us
                 </Link>
