@@ -25,7 +25,7 @@ export default function Profile() {
       </div>
       <div className="grid-two-col profile--grid">
         <img className="profile--photo" src={member.photoUrl} />
-        <p className="no-margin">{member.bio}</p>
+        <p className="main-p no-margin">{member.bio}</p>
       </div>
     </main>
   );
