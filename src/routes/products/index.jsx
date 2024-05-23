@@ -31,7 +31,7 @@ export default function Products() {
         <div className="grid-two-col products--product-info">
           <img
             src={msWindowsImg}
-            alt="Some UPVC windows installed in a house"
+            alt="Microsoft Windows 3.1 retail box for the Japanese market"
           />
           <div>
             <p className="no-margin">
