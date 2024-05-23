@@ -9,7 +9,7 @@
           "jobTitle": "Managing Director",
           "tel": "000",
           "email": "fred@megawindows.co.uk",
-          "photoUrl": "/src/assets/team-photos/fred.jpg",
+          "photoUrl": "/team-photos/fred.jpg",
           "bio": "Stop asking me for a bio, I have a job for christsake. Do you even know who I am? I'm not Stephen Spielberg, but my god am I the premier Stephen Spielberg lookalike, I'm so good I pretended to be him and directed 5 movies before anybody even suspected a thing. "
         },
         {
@@ -18,7 +18,7 @@
           "jobTitle": "Banter Director",
           "tel": "111",
           "email": "joey@megawindows.co.uk",
-          "photoUrl": "/src/assets/team-photos/joey.jpg",
+          "photoUrl": "/team-photos/joey.jpg",
           "bio": "If you keep pestering me for a bio, I am going to get you sacked. While you're here, can you buy some burgers? I mean at Burger Thing we are really, really, struggling, I mean who even goes to Burger Thing?! Where even are any of the Burger Things? Have you seen one? Cuz I haven't and I work there."
         }
       ]
@@ -32,7 +32,7 @@
           "jobTitle": "Messing Around On Social Media All Day",
           "tel": "222",
           "email": "iamveryimportantandsmart@megawindows.co.uk",
-          "photoUrl": "/src/assets/team-photos/someone.jpg",
+          "photoUrl": "/team-photos/someone.jpg",
           "bio": "I am the coolest guy ever! I am so cool, I earn £95k a year and all I do is mess around on social media all day doing this thing called 'marketing'. Without me, the company would go under."
         }
       ]
@@ -46,7 +46,7 @@
           "jobTitle": "Telephone Communications Officer",
           "tel": "999",
           "email": "winger@megawindows.co.uk",
-          "photoUrl": "/src/assets/team-photos/jeff.jpg",
+          "photoUrl": "/team-photos/jeff.jpg",
           "bio": "I came here to learn law - for real this time - and play billiards, America's coolest sport. I have the fastest fingers in the business - can throw out more texts per minute than anybody on the planet. Errr, everyone still uses blackberries right? Right!?"
         },
         {
@@ -55,7 +55,7 @@
           "jobTitle": "Actually Getting Work Done Officer",
           "tel": "999",
           "email": "edison@megawindows.co.uk",
-          "photoUrl": "/src/assets/team-photos/annie.jpg",
+          "photoUrl": "/team-photos/annie.jpg",
           "bio": "Is this for our school yearbook?"
         },
         {
@@ -64,7 +64,7 @@
           "jobTitle": "Optimisation Officer",
           "tel": "999",
           "email": "nadir@megawindows.co.uk",
-          "photoUrl": "/src/assets/team-photos/abed.jpg",
+          "photoUrl": "/team-photos/abed.jpg",
           "bio": "I like chicken fingers and Nicholas Cage."
         }
       ]
