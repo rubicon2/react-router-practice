@@ -69,20 +69,6 @@ export default function HeaderMenu() {
             <li className="mobile-header-nav-list--item">
               <Link
                 className="header-link mobile-header-link"
-                to="/news"
-                onClick={() => {
-                  setMenuOpen(false);
-                  scrollTo(0, 0);
-                }}
-                aria-hidden={!menuOpen}
-                tabIndex={menuItemTabIndex}
-              >
-                News
-              </Link>
-            </li>
-            <li className="mobile-header-nav-list--item">
-              <Link
-                className="header-link mobile-header-link"
                 to="/about-us"
                 onClick={() => {
                   setMenuOpen(false);
@@ -132,15 +118,6 @@ export default function HeaderMenu() {
                   onClick={() => scrollTo(0, 0)}
                 >
                   Products
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="header-link desktop-header-link"
-                  to="/news"
-                  onClick={() => scrollTo(0, 0)}
-                >
-                  News
                 </Link>
               </li>
               <li>

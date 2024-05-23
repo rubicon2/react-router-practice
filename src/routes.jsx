@@ -1,7 +1,6 @@
 import Root from './routes/root';
 import Home from './routes/home';
 import Products from './routes/products';
-import News from './routes/news';
 import AboutUs from './routes/aboutUs';
 import ContactUs from './routes/contactUs';
 import Profile, { loader as profileLoader } from './routes/profile';
@@ -18,10 +17,6 @@ const routes = [
       {
         path: '/products',
         element: <Products />,
-      },
-      {
-        path: '/news',
-        element: <News />,
       },
       {
         path: '/about-us',
