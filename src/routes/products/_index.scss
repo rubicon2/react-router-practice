@@ -1,0 +1,26 @@
+.products--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.products--grid > * {
+  text-align: center;
+}
+
+.products--product-section {
+  padding-bottom: 2rem;
+  // Want even spacing between product section content and border, but line spacing on next heading means 1rem looks better than 2rem
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.grid-two-col.products--product-info {
+  gap: 2rem;
+}
+
+.products--product-heading {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
