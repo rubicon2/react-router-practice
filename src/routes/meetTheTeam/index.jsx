@@ -4,7 +4,7 @@ import './_index.scss';
 
 export default function MeetTheTeam() {
   return (
-    <div>
+    <div className="meet-the-team">
       <h1 className="meet-the-team--heading">Meet The Team</h1>
       <p className="p-twenty-five-em">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus a dolore
