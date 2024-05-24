@@ -4,7 +4,7 @@ import './_index.scss';
 
 export default function Products() {
   return (
-    <main className="container">
+    <main className="container products">
       <h1 className="page-heading">Products</h1>
 
       <div className="products--product-section">
