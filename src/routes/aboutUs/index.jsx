@@ -1,6 +1,5 @@
 import happyMan from '../../assets/happy-man.png';
 import MeetTheTeam from '../meetTheTeam';
-import './_index.scss';
 
 export default function AboutUs() {
   return (
