@@ -1,35 +1,37 @@
-.profile--heading {
-  margin: 1rem 0;
-}
+.profile {
+  &--heading {
+    margin: 1rem 0;
+  }
 
-.profile--name,
-.profile--job-title {
-  margin: 0;
-  text-transform: uppercase;
-}
+  &--name,
+  &--job-title {
+    margin: 0;
+    text-transform: uppercase;
+  }
 
-.profile--name {
-  font-size: 3rem;
-  margin-bottom: 0.2em;
-}
+  &--name {
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+  }
 
-.profile--job-title {
-  font-size: 1.8rem;
-  line-height: 1;
-  font-weight: 300;
-}
+  &--job-title {
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 300;
+  }
 
-.profile--email {
-  margin: 1em 0;
-  font-weight: 300;
-}
+  &--email {
+    margin: 1em 0;
+    font-weight: 300;
+  }
 
-.profile--grid {
-  gap: 2rem;
-}
+  &--grid {
+    gap: 2rem;
+  }
 
-.profile--photo {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
+  &--photo {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
 }

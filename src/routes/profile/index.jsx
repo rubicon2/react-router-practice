@@ -17,7 +17,7 @@ export default function Profile() {
   const member = useLoaderData();
 
   return (
-    <main className="container top-padding">
+    <main className="container top-padding profile">
       <Link to="/about-us">Back</Link>
       <div className="profile--heading">
         <h1 className="profile--name">{member.name}</h1>
