@@ -1,24 +1,23 @@
 .team-card {
-}
+  &--photo {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
 
-.team-card--photo {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
+  &--name,
+  &--job-title {
+    text-transform: uppercase;
+    margin: 0;
+  }
 
-.team-card--name,
-.team-card--job-title {
-  text-transform: uppercase;
-  margin: 0;
-}
+  &--name {
+    font-size: 1.5rem;
+  }
 
-.team-card--name {
-  font-size: 1.5rem;
-}
-
-.team-card--job-title {
-  font-weight: 400;
-  font-size: 0.8rem;
-  line-height: 1.5;
+  &--job-title {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
 }
