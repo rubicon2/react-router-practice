@@ -1,14 +1,13 @@
 @use '../../breakpoints';
 
 .main-header {
+  background-color: var(--banner-color);
   color: var(--light-grey);
+
   /* So the header menu bar can be above rest of page, but behind the main header logo etc. */
   position: relative;
   z-index: 1;
-}
 
-.main-header {
-  background-color: var(--banner-color);
   text-align: center;
 }
 
