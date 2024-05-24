@@ -4,7 +4,7 @@ import logo from '../../assets/white-logo.svg';
 import facebookLogo from '../../assets/facebookLogo.png';
 import twitterLogo from '../../assets/twitterLogo.png';
 import instagramLogo from '../../assets/instagramLogo.png';
-import './index.css';
+import './index.scss';
 
 const siteSearchUrl = `https://www.google.co.uk/search?q=site%3A${window.location.hostname}+`;
 
@@ -27,8 +27,8 @@ export default function Footer() {
   return (
     <footer className="main-footer">
       <div className="container top-padding">
-        <div className="main-footer-grid">
-          <div className="main-footer-grid--item">
+        <div className="main-footer--grid">
+          <div className="main-footer--grid--item">
             <img className="main-footer--logo" src={logo} alt="" />
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
@@ -37,7 +37,7 @@ export default function Footer() {
               deleniti soluta cumque natus!
             </p>
           </div>
-          <div className="main-footer-grid--item">
+          <div className="main-footer--grid--item">
             <h2 className="main-footer--heading">Policies</h2>
             <ul className="nav-list footer-nav-list">
               <li>
@@ -54,14 +54,14 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="main-footer-grid--item">
+          <div className="main-footer--grid--item">
             <h2 className="main-footer--heading">Newsletter</h2>
             <Form className="main-footer--form">
               <input type="email" name="email" placeholder="Email address" />
               <button type="submit">Sign up</button>
             </Form>
           </div>
-          <div className="main-footer--item">
+          <div className="main-footer--grid--item">
             <h2 className="main-footer--heading">Search</h2>
             <Form className="main-footer--form" onSubmit={handleSearch}>
               <input type="text" name="search" placeholder="Search" />
