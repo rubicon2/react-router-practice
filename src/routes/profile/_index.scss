@@ -1,6 +1,9 @@
 .profile {
   &--heading {
     margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 10px solid var(--banner-color);
+    border-radius: 10px;
   }
 
   &--name,
@@ -33,5 +36,8 @@
     height: 400px;
     width: 100%;
     object-fit: cover;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 1px rgba(20, 20, 20, 0.123);
   }
 }

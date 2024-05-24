@@ -22,8 +22,9 @@ export default function Profile() {
       <div className="profile--heading">
         <h1 className="profile--name">{member.name}</h1>
         <div className="profile--job-title">{member.jobTitle}</div>
+        <div className="profile--email">{member.email}</div>
       </div>
-      <div className="profile--email">{member.email}</div>
+
       <div className="grid-two-col profile--grid">
         <img className="profile--photo" src={member.photoUrl} />
         <p className="main-p no-margin">{member.bio}</p>
