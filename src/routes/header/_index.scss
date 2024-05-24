@@ -9,12 +9,12 @@
   z-index: 1;
 
   text-align: center;
-}
 
-.main-header--logo {
-  padding: 0 1rem;
-  padding-top: 2rem;
-  max-width: 280px;
+  &--logo {
+    padding: 0 1rem;
+    padding-top: 2rem;
+    max-width: 280px;
+  }
 }
 
 @media (min-width: breakpoints.$tablet) {
