@@ -6,34 +6,31 @@
   gap: 1rem;
   max-width: 600px;
   margin: 0 auto;
-}
 
-.contact-us--form-item {
-  display: flex;
-  justify-content: space-between;
-}
+  & > button {
+    align-self: center;
+  }
 
-.contact-us--form-item > input,
-.contact-us--form-item > textarea {
-  font-size: 1rem;
   width: 70%;
-}
+  &--item {
+    display: flex;
+    justify-content: space-between;
 
-.contact-us--form-item > textarea {
-  resize: vertical;
-}
+    & > input,
+    & > textarea {
+      font-size: 1rem;
+    }
 
-.contact-us--form > button {
-  align-self: center;
+    & > textarea {
+      resize: vertical;
+    }
+  }
 }
 
 @media (max-width: breakpoints.$tablet) {
-  .contact-us--form-item {
     flex-direction: column;
-  }
+  .contact-us--form--item {
 
-  .contact-us--form-item > input,
-  .contact-us--form-item > textarea {
     width: 100%;
   }
 }

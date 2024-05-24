@@ -10,15 +10,15 @@ export default function ContactUs() {
         queries within 2 fake days.
       </p>
       <Form className="contact-us--form">
-        <label className="contact-us--form-item">
+        <label className="contact-us--form--item">
           Fake Name
           <input type="text" name="name" />
         </label>
-        <label className="contact-us--form-item">
+        <label className="contact-us--form--item">
           Fake Email
           <input type="email" name="email" />
         </label>
-        <label className="contact-us--form-item">
+        <label className="contact-us--form--item">
           Fake Message
           <textarea name="message" rows="8"></textarea>
         </label>
