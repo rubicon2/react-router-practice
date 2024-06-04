@@ -27,21 +27,21 @@ const routes = [
       },
       {
         path: '/products',
-        element: lazyLoadRoute('./assets/routes/products'),
+        element: lazyLoadRoute('./routes/products'),
       },
       {
         path: '/about-us',
-        element: lazyLoadRoute('./assets/routes/aboutUs'),
+        element: lazyLoadRoute('./routes/aboutUs'),
       },
       {
         path: '/about-us/:id',
-        element: lazyLoadRoute('./assets/routes/profile'),
-        errorElement: lazyLoadRoute('./assets/routes/error'),
+        element: lazyLoadRoute('./routes/profile'),
+        errorElement: lazyLoadRoute('./routes/error'),
         loader: profileLoader,
       },
       {
         path: '/contact-us',
-        element: lazyLoadRoute('./assets/routes/contactUs'),
+        element: lazyLoadRoute('./routes/contactUs'),
       },
     ],
   },
