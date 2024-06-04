@@ -1,8 +1,8 @@
-import Root from './routes/root';
-import Error from './routes/error';
-import Home from './routes/home';
-import Loading from './routes/loading';
-import { loader as profileLoader } from './routes/profile';
+import Root from './assets/routes/root';
+import Error from './assets/routes/error';
+import Home from './assets/routes/home';
+import Loading from './assets/routes/loading';
+import { loader as profileLoader } from './assets/routes/profile';
 import { Suspense, lazy } from 'react';
 
 function lazyLoadRoute(componentPath) {
@@ -27,21 +27,21 @@ const routes = [
       },
       {
         path: '/products',
-        element: lazyLoadRoute('./routes/products'),
+        element: lazyLoadRoute('./assets/routes/products'),
       },
       {
         path: '/about-us',
-        element: lazyLoadRoute('./routes/aboutUs'),
+        element: lazyLoadRoute('./assets/routes/aboutUs'),
       },
       {
         path: '/about-us/:id',
-        element: lazyLoadRoute('./routes/profile'),
-        errorElement: lazyLoadRoute('./routes/error'),
+        element: lazyLoadRoute('./assets/routes/profile'),
+        errorElement: lazyLoadRoute('./assets/routes/error'),
         loader: profileLoader,
       },
       {
         path: '/contact-us',
-        element: lazyLoadRoute('./routes/contactUs'),
+        element: lazyLoadRoute('./assets/routes/contactUs'),
       },
     ],
   },

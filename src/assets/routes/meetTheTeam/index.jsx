@@ -1,5 +1,5 @@
 import TeamCard from '../teamCard';
-import teamData from '../../assets/team-data.json';
+import teamData from '../../team-data.json';
 import './_index.scss';
 
 export default function MeetTheTeam() {

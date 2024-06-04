@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router';
 import { Link } from 'react-router-dom';
-import teamData from '../../assets/team-data.json';
+import teamData from '../../team-data.json';
 import './_index.scss';
 
 export async function loader({ params }) {

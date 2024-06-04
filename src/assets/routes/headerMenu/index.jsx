@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import burgerMenuIcon from '../../assets/burgerMenu.svg';
-import closeIcon from '../../assets/close.svg';
+import burgerMenuIcon from '../../burgerMenu.svg';
+import closeIcon from '../../close.svg';
 
 import './_index.scss';
 

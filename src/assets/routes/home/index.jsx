@@ -1,4 +1,4 @@
-import happyMan from '../../assets/happy-man.png';
+import happyMan from '../../happy-man.png';
 import './_index.scss';
 
 export default function Home() {

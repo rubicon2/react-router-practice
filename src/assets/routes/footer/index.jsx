@@ -1,9 +1,9 @@
 import { Link, Form } from 'react-router-dom';
 
-import logo from '../../assets/white-logo.svg';
-import facebookLogo from '../../assets/facebookLogo.png';
-import twitterLogo from '../../assets/twitterLogo.png';
-import instagramLogo from '../../assets/instagramLogo.png';
+import logo from '../../white-logo.svg';
+import facebookLogo from '../../facebookLogo.png';
+import twitterLogo from '../../twitterLogo.png';
+import instagramLogo from '../../instagramLogo.png';
 import './index.scss';
 
 const siteSearchUrl = `https://www.google.co.uk/search?q=site%3A${window.location.hostname}+`;

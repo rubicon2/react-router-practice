@@ -1,5 +1,5 @@
-import windowImg from '../../assets/product-photos/window.jpg';
-import msWindowsImg from '../../assets/product-photos/microsoft-windows.jpg';
+import windowImg from '../../product-photos/window.jpg';
+import msWindowsImg from '../../product-photos/microsoft-windows.jpg';
 import './_index.scss';
 
 export default function Products() {
