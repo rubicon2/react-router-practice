@@ -25,6 +25,7 @@ I made a basic logo in Inkscape. While there are a lot of free icons available o
 Lesson: Always turn the svg text into a path!
 
 ## To Do
+- Come back later and make the initial load faster. It is currently horribly slow, as it loads the entire site all at once. Learn how to do lazy loading of components with react-router
 - Do react router tutorial again, as there were many topics and hooks that weren't covered by this practice project and I don't feel like they have really sunk in yet
 - Learn SASS as it has already been very useful just with the addition of variables that can be used in media queries
 - Learn more Inkscape as it is a very powerful tool!
