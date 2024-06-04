@@ -141,3 +141,8 @@ p {
   font-size: 1.5rem;
   font-weight: 300;
 }
+
+.grid-place-center {
+  display: grid;
+  place-items: center;
+}

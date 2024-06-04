@@ -1,10 +1,19 @@
 import Root from './routes/root';
-import Home from './routes/home';
-import Products from './routes/products';
-import AboutUs from './routes/aboutUs';
-import ContactUs from './routes/contactUs';
-import Profile, { loader as profileLoader } from './routes/profile';
 import Error from './routes/error';
+import Home from './routes/home';
+import Loading from './routes/loading';
+import { loader as profileLoader } from './routes/profile';
+import { Suspense, lazy } from 'react';
+
+function lazyLoadRoute(componentPath) {
+  const Component = lazy(() => import(componentPath));
+
+  return (
+    <Suspense fallback={<Loading />}>
+      <Component />
+    </Suspense>
+  );
+}
 
 const routes = [
   {
@@ -18,21 +27,21 @@ const routes = [
       },
       {
         path: '/products',
-        element: <Products />,
+        element: lazyLoadRoute('./routes/products'),
       },
       {
         path: '/about-us',
-        element: <AboutUs />,
+        element: lazyLoadRoute('./routes/aboutUs'),
       },
       {
         path: '/about-us/:id',
-        element: <Profile />,
-        errorElement: <Error />,
+        element: lazyLoadRoute('./routes/profile'),
+        errorElement: lazyLoadRoute('./routes/error'),
         loader: profileLoader,
       },
       {
         path: '/contact-us',
-        element: <ContactUs />,
+        element: lazyLoadRoute('./routes/contactUs'),
       },
     ],
   },
