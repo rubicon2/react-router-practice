@@ -8,6 +8,10 @@
   position: relative;
   z-index: 1;
 
+  // To fix a ridiculous 10 year old bug in iOS safari - or maybe it just deals with z-index or stacking contexts differenly from other browsers?
+  // https://css-tricks.com/forums/topic/safari-for-ios-z-index-ordering-bug-while-scrolling-a-page-with-a-fixed-element/
+  transform: translate3d(0, 0, 0);
+
   text-align: center;
 
   &--logo {
