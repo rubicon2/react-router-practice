@@ -17,6 +17,8 @@ body {
   --light-grey: #f0f0f4;
   --primary-text: #15141a;
   --secondary-text: #5b5b66;
+
+  isolation: isolate;
 }
 
 *,
